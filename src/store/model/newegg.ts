@@ -1243,6 +1243,16 @@ export const Newegg: Store = {
       url:
         'https://www.newegg.com/asus-rog-crosshair-viii-dark-hero/p/N82E16813119362',
     },
+    // SPENCER
+    {
+      brand: 'spencer',
+      cartUrl:
+        'https://secure.newegg.com/Shopping/AddtoCart.aspx?Submit=ADD&ItemList=N82E16820313309',
+      model: 'spencer',
+      series: '3060ti',
+      url:
+        'https://www.newegg.com/team-32gb-microsdhc/p/N82E16820313309',
+    },
   ],
   name: 'newegg',
   realTimeInventoryLookup: async (itemNumber: string) => {

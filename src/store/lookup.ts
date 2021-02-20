@@ -25,6 +25,9 @@ import {processBackoffDelay} from './model/helpers/backoff';
 import {sendNotification} from '../notification';
 import useProxy from '@doridian/puppeteer-page-proxy';
 
+// SPENCER
+import { purchase } from '../SPENCER'
+
 const inStock: Record<string, boolean> = {};
 
 const linkBuilderLastRunTimes: Record<string, number> = {};
@@ -319,6 +322,8 @@ async function lookupCard(
         : link.openCartAction(browser));
     }
 
+    // SPENCER
+    await purchase()
     sendNotification(link, store);
 
     if (config.page.inStockWaitTime) {

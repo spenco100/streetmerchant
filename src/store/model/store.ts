@@ -34,7 +34,8 @@ export type Brand =
   | 'sony'
   | 'xfx'
   | 'powercolor'
-  | 'zotac';
+  | 'zotac'
+  | 'spencer'; // SPENCER
 
 export type Series =
   | 'test:series'
@@ -55,7 +56,8 @@ export type Series =
   | 'sonyps5de'
   | 'sf'
   | 'xboxsx'
-  | 'xboxss';
+  | 'xboxss'
+  | 'spencer';
 
 export type Model =
   | 'test:model'
@@ -169,7 +171,8 @@ export type Model =
   | 'xlr8 epic x'
   | 'xlr8 gaming'
   | 'xlr8 revel'
-  | 'xlr8 uprising';
+  | 'xlr8 uprising'
+  | 'spencer'; // SPENCER
 
 export type Link = {
   brand: Brand;

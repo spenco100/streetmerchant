@@ -227,6 +227,8 @@ const notifications = {
       'test:series': envOrArray(process.env.DISCORD_NOTIFY_GROUP_TEST),
       xboxss: envOrArray(process.env.DISCORD_NOTIFY_GROUP_XBOXSS),
       xboxsx: envOrArray(process.env.DISCORD_NOTIFY_GROUP_XBOXSX),
+      // SPENCER
+      spencer: envOrArray(process.env.DISCORD_NOTIFY_GROUP_DARKHERO),
     },
     webhooks: envOrArray(process.env.DISCORD_WEB_HOOK),
   },
@@ -391,6 +393,8 @@ const store = {
       'test:series': envOrNumber(process.env.MAX_PRICE_SERIES_TEST),
       xboxss: envOrNumber(process.env.MAX_PRICE_SERIES_XBOXSS),
       xboxsx: envOrNumber(process.env.MAX_PRICE_SERIES_XBOXSX),
+      // SPENCER
+      spencer: envOrNumber(process.env.MAX_PRICE_SERIES_DARKHERO),
     },
   },
   microCenterLocation: envOrArray(process.env.MICROCENTER_LOCATION, ['web']),

@@ -18,7 +18,13 @@ import {updateRedis} from './redis';
 import {activateSmartthingsSwitch} from './smartthings';
 import {sendStreamLabsAlert} from './streamlabs';
 
+
 export function sendNotification(link: Link, store: Store) {
+  console.log('SPENCER: ', link.cartUrl)
+  // https://secure.newegg.com/Shopping/AddtoCart.aspx?Submit=ADD&ItemList=N82E16820313309
+  // Checkout button: 'btn btn-primary btn-wide'
+  // Continue as guest: 'btn btn-gray'
+
   // Priority
   playSound();
   sendDiscordMessage(link, store);
